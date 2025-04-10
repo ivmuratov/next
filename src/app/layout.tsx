@@ -1,7 +1,8 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import { PropsWithChildren } from "react";
-import "./globals.css";
+import { ThemeProvider } from "@/providers";
+import "@/styles/globals.css";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -90,7 +91,6 @@ export const metadata: Metadata = {
 
   // === Дополнительные настройки === //
   manifest: "/site.webmanifest", // Для PWA (если есть)
-  themeColor: "#ffffff", // Цвет темы браузера
   authors: [{ name: "Ваша компания", url: "https://ваш-сайт.ru" }],
   formatDetection: {
     telephone: false, // Отключить автоматическое определение телефонов (мешает SEO)
@@ -100,7 +100,9 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: PropsWithChildren) {
   return (
     <html lang="en">
-      <body className={`${geistSans.variable} ${geistMono.variable}`}>{children}</body>
+      <body className={`${geistSans.variable} ${geistMono.variable}`}>
+        <ThemeProvider>{children}</ThemeProvider>
+      </body>
     </html>
   );
 }
