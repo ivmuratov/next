@@ -1,4 +1,4 @@
-.button {
+.theme-switcher {
   cursor: pointer;
 
   padding: 8px;
@@ -8,7 +8,7 @@
   background: transparent;
 }
 
-.button:hover {
+.theme-switcher:hover {
   background-color: hsl(var(--background) / 10%);
 }
 

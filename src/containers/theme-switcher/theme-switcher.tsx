@@ -10,7 +10,11 @@ export function ThemeSwitcher() {
   const handleSetTheme = () => setTheme(theme === "dark" ? "light" : "dark");
 
   return (
-    <button onClick={handleSetTheme} className={styles.button} aria-label="Toggle theme">
+    <button
+      className={styles["theme-switcher"]}
+      aria-label="Toggle switcher"
+      onClick={handleSetTheme}
+    >
       {theme === "dark" ? <Sun className={styles.icon} /> : <Moon className={styles.icon} />}
     </button>
   );
