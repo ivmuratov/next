@@ -16,3 +16,10 @@ body {
     color 0.4s ease,
     border-color 0.4s ease;
 }
+
+:root {
+  /* Брейкпоинты */
+  --breakpoint-mobile: 480px;
+  --breakpoint-tablet: 768px;
+  --breakpoint-desktop: 1024px;
+}

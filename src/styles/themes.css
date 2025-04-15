@@ -1,13 +1,41 @@
-:root {
-  --background: #fff;
-  --foreground: #222;
-  --primary: #2563eb;
-  --hover-bg: rgb(0 0 0 / 5%);
+.light {
+  /* Основные цвета */
+  --background: #f8f9fa;
+  --background-secondary: #e9ecef;
+  --foreground: #2d3748;
+  --foreground-secondary: #4a5568;
+  --primary: #4f46e5;
+  --primary-hover: #4338ca;
+
+  /* Дополнительные цвета */
+  --secondary: #5f6c80;
+  --success: #10a37f;
+  --warning: #e9b949;
+  --danger: #dc4c64;
+
+  /* Состояния */
+  --hover-bg: rgb(0 0 0 / 4%);
+  --active-bg: rgb(0 0 0 / 8%);
+  --border-color: #e2e8f0;
 }
 
 .dark {
-  --background: #121212;
-  --foreground: #f5f5f5;
-  --primary: #3b82f6;
-  --hover-bg: rgb(255 255 255 / 10%);
+  /* Основные цвета */
+  --background: #1a202c;
+  --background-secondary: #2d3748;
+  --foreground: #e2e8f0;
+  --foreground-secondary: #a0aec0;
+  --primary: #7c3aed;
+  --primary-hover: #6d28d9;
+
+  /* Дополнительные цвета */
+  --secondary: #a0aec0;
+  --success: #34d399;
+  --warning: #f6ad55;
+  --danger: #f87171;
+
+  /* Состояния */
+  --hover-bg: rgb(255 255 255 / 6%);
+  --active-bg: rgb(255 255 255 / 12%);
+  --border-color: #2d3748;
 }
