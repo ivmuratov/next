@@ -1,6 +1,4 @@
 .sidebar {
-  position: relative;
-
   overflow: hidden;
   display: grid;
   justify-content: center;
@@ -23,14 +21,51 @@
 .toggle-button {
   cursor: pointer;
 
+  display: flex;
+  align-items: center;
+  justify-content: center;
   justify-self: center;
 
   width: 40px;
   height: 40px;
+  padding: 0;
+  border: none;
+  border-radius: 50%;
 
   background-color: var(--background);
+  outline: none;
+  box-shadow:
+    0 2px 5px rgb(0 0 0 / 20%),
+    0 1px 2px rgb(0 0 0 / 10%);
+
+  transition: all var(--transition-seconds) ease;
 
   &:hover {
-    filter: brightness(1.1);
+    transform: translateY(-1px);
+    background-color: var(--background);
+    box-shadow:
+      0 4px 8px rgb(0 0 0 / 20%),
+      0 2px 4px rgb(0 0 0 / 15%);
+  }
+
+  &:active {
+    transform: translateY(1px);
+    box-shadow: 0 1px 3px rgb(0 0 0 / 20%);
+  }
+
+  &:focus-visible {
+    outline: 2px solid var(--accent-color);
+    outline-offset: 2px;
+  }
+
+  &svg {
+    width: 60%;
+    height: 60%;
+    fill: white;
+    transition: transform var(--transition-seconds) ease;
+
+    &:hover {
+      transform: scale(1.1);
+    }
   }
 }

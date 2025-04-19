@@ -2,9 +2,9 @@
 
 import { Moon, Sun } from "lucide-react";
 import { useTheme } from "next-themes";
-import styles from "./theme-switcher.module.css";
+import styles from "./theme-switcher-button.module.css";
 
-export function ThemeSwitcher() {
+export function ThemeSwitcherButton() {
   const { theme, setTheme } = useTheme();
 
   const handleSetTheme = () => setTheme(theme === "dark" ? "light" : "dark");

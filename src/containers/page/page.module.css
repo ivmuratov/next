@@ -1,6 +1,10 @@
 .page {
+  overflow-y: auto;
   flex-grow: 1;
+
   width: calc(100% - var(--sidebar-width));
+  max-height: 100vh;
   padding: 20px;
+
   transition: width var(--transition-seconds) ease;
 }

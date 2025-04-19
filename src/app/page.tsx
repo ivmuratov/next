@@ -1,9 +1,16 @@
-import { Page, ThemeSwitcher } from "@/containers";
+import { Page, ThemeSwitcherButton } from "@/containers";
+import { Fragment } from "react";
 
 export default function Home() {
   return (
     <Page>
-      <ThemeSwitcher />
+      <ThemeSwitcherButton />
+      {new Array(50).fill("*").map((_, index) => (
+        <Fragment key={index}>
+          123
+          <br />
+        </Fragment>
+      ))}
     </Page>
   );
 }

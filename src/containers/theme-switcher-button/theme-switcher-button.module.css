@@ -1,4 +1,4 @@
-.theme-switcher {
+.theme-switcher-button {
   cursor: pointer;
 
   padding: 8px;
@@ -6,10 +6,10 @@
   border-radius: 6px;
 
   background: transparent;
-}
 
-.theme-switcher:hover {
-  background-color: hsl(var(--background) / 10%);
+  &:hover {
+    background-color: hsl(var(--background) / 10%);
+  }
 }
 
 .icon {
