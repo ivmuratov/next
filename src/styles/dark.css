@@ -1,24 +1,3 @@
-.light {
-  /* Основные цвета */
-  --background: #f8f9fa;
-  --background-secondary: #e9ecef;
-  --foreground: #2d3748;
-  --foreground-secondary: #4a5568;
-  --primary: #4f46e5;
-  --primary-hover: #4338ca;
-
-  /* Дополнительные цвета */
-  --secondary: #5f6c80;
-  --success: #10a37f;
-  --warning: #e9b949;
-  --danger: #dc4c64;
-
-  /* Состояния */
-  --hover-bg: rgb(0 0 0 / 4%);
-  --active-bg: rgb(0 0 0 / 8%);
-  --border-color: #e2e8f0;
-}
-
 .dark {
   /* Основные цвета */
   --background: #1a202c;

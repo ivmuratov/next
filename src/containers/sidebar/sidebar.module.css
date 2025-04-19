@@ -1,6 +1,5 @@
 .sidebar {
-  --sidebar-width: 250px;
-  --collapsed-width: 50px;
+  position: relative;
 
   overflow: hidden;
   display: grid;
@@ -12,11 +11,13 @@
 
   background-color: var(--background-secondary);
 
-  transition: width 0.3s ease;
+  transition:
+    width var(--transition-seconds) ease,
+    background-color var(--transition-seconds) ease;
+}
 
-  &.collapsed {
-    width: var(--collapsed-width);
-  }
+.collapsed {
+  width: var(--sidebar-width-collapsed);
 }
 
 .toggle-button {

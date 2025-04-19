@@ -1,5 +1,6 @@
 @import url("modern-normalize/modern-normalize.css");
-@import url("./themes.css");
+@import url("./light.css");
+@import url("./dark.css");
 
 html,
 body {
@@ -12,9 +13,9 @@ body {
   background-color: var(--background);
 
   transition:
-    background-color 0.4s ease,
-    color 0.4s ease,
-    border-color 0.4s ease;
+    background-color var(--transition-seconds) ease,
+    color var(--transition-seconds) ease,
+    border-color var(--transition-seconds) ease;
 }
 
 :root {
@@ -22,4 +23,11 @@ body {
   --breakpoint-mobile: 480px;
   --breakpoint-tablet: 768px;
   --breakpoint-desktop: 1024px;
+
+  /* Ширина сайдбара */
+  --sidebar-width: 300px;
+  --sidebar-width-collapsed: 80px;
+
+  /* Анимации */
+  --transition-seconds: 0.4s;
 }

@@ -1,0 +1,6 @@
+.page {
+  flex-grow: 1;
+  width: calc(100% - var(--sidebar-width));
+  padding: 20px;
+  transition: width var(--transition-seconds) ease;
+}

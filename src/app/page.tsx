@@ -1,10 +1,9 @@
-import { ThemeSwitcher } from "@/containers";
-import styles from "./page.module.css";
+import { Page, ThemeSwitcher } from "@/containers";
 
 export default function Home() {
   return (
-    <main className={styles.page}>
+    <Page>
       <ThemeSwitcher />
-    </main>
+    </Page>
   );
 }
