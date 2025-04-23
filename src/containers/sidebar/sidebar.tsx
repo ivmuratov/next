@@ -2,6 +2,7 @@
 
 import { useBoolean } from "@/hooks";
 import { ChevronLeft, ChevronRight } from "lucide-react";
+import { IconButton } from "@/components";
 import clsx from "clsx";
 import styles from "./sidebar.module.css";
 
@@ -18,9 +19,11 @@ export function Sidebar() {
           <li>Настройки</li>
         </ul>
       </nav>
-      <button className={styles["toggle-button"]} onClick={setIsCollapsed.toggle}>
-        {isCollapsed ? <ChevronRight size={20} /> : <ChevronLeft size={20} />}
-      </button>
+      <IconButton
+        Icon={isCollapsed ? ChevronRight : ChevronLeft}
+        onClick={setIsCollapsed.toggle}
+        variant="round"
+      />
     </aside>
   );
 }

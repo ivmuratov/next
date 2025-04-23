@@ -1,8 +1,8 @@
 import { PropsWithChildren } from "react";
 import { ThemeProvider } from "@/providers";
 import { robotoMono } from "@/constants";
-import "@/styles/globals.css";
 import { MainLayout } from "@/layouts";
+import "@/styles/globals.css";
 
 export { metadata } from "@/constants";
 

@@ -14,7 +14,7 @@
   --danger: #dc4c64;
 
   /* Состояния */
-  --hover-bg: rgb(0 0 0 / 4%);
-  --active-bg: rgb(0 0 0 / 8%);
+  --hover-bg: #f0f5fb;
+  --active-bg: #e4eefa;
   --border-color: #e2e8f0;
 }

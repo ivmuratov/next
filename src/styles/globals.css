@@ -25,4 +25,7 @@ body {
 
   /* Анимации */
   --transition-seconds: 0.4s;
+
+  /* Бордер радиус */
+  --border-radius: 4px;
 }

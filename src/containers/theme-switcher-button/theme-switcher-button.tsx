@@ -2,20 +2,23 @@
 
 import { Moon, Sun } from "lucide-react";
 import { useTheme } from "next-themes";
-import styles from "./theme-switcher-button.module.css";
+import { IconButton } from "@/components";
 
-export function ThemeSwitcherButton() {
+interface Props {
+  className?: string;
+}
+
+export function ThemeSwitcherButton({ className }: Props) {
   const { theme, setTheme } = useTheme();
 
   const handleSetTheme = () => setTheme(theme === "dark" ? "light" : "dark");
 
   return (
-    <button
-      className={styles["theme-switcher"]}
+    <IconButton
+      className={className}
       aria-label="Toggle switcher"
+      Icon={theme === "dark" ? Sun : Moon}
       onClick={handleSetTheme}
-    >
-      {theme === "dark" ? <Sun className={styles.icon} /> : <Moon className={styles.icon} />}
-    </button>
+    />
   );
 }

@@ -1,0 +1,55 @@
+.icon-button {
+  cursor: pointer;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  justify-self: center;
+
+  width: 40px;
+  height: 40px;
+  padding: 0;
+  border: none;
+  border-radius: var(--border-radius);
+
+  background-color: var(--background);
+  outline: none;
+  box-shadow:
+    0 2px 5px rgb(0 0 0 / 20%),
+    0 1px 2px rgb(0 0 0 / 10%);
+
+  transition: all var(--transition-seconds) ease;
+
+  &:hover {
+    transform: translateY(-1px);
+    background-color: var(--hover-bg);
+    box-shadow:
+      0 4px 8px rgb(0 0 0 / 20%),
+      0 2px 4px rgb(0 0 0 / 15%);
+  }
+
+  &:active {
+    transform: translateY(1px);
+    background-color: var(--active-bg);
+    box-shadow: 0 1px 3px rgb(0 0 0 / 20%);
+  }
+
+  &:focus-visible {
+    outline: 2px solid var(--border-color);
+    outline-offset: 2px;
+  }
+}
+
+.icon {
+  width: 50%;
+  height: 50%;
+  transition: transform var(--transition-seconds) ease;
+
+  &:hover {
+    transform: scale(1.1);
+  }
+}
+
+.round {
+  border-radius: 50%;
+}

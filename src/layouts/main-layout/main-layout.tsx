@@ -4,7 +4,7 @@ import styles from "./main-layout.module.css";
 
 export function MainLayout({ children }: PropsWithChildren) {
   return (
-    <div className={styles.container}>
+    <div className={styles["main-layout"]}>
       <Sidebar />
       {children}
     </div>
