@@ -1,0 +1,33 @@
+.link {
+  position: relative;
+
+  display: flex;
+  gap: 0.25rem;
+  align-items: center;
+
+  color: var(--foreground);
+  text-decoration: none;
+
+  transition: all var(--transition-seconds) ease;
+
+  &:hover {
+    transform: translateY(-1px);
+    color: var(--danger);
+  }
+}
+
+.active {
+  color: var(--danger);
+}
+
+.label {
+  display: inline-block;
+  width: max-content;
+  opacity: 1;
+  transition: all var(--transition-seconds) ease;
+
+  &.hidden {
+    width: 0;
+    opacity: 0;
+  }
+}

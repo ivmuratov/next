@@ -3,7 +3,7 @@ import { cva, VariantProps } from "class-variance-authority";
 import type { LucideIcon } from "lucide-react";
 import styles from "./icon-button.module.css";
 
-const variants = cva(styles["icon-button"], {
+const variants = cva(styles.iconButton, {
   variants: {
     variant: {
       round: styles.round,
@@ -23,11 +23,7 @@ interface Props extends VariantProps<typeof variants> {
 export const IconButton = forwardRef<HTMLButtonElement, Props>(
   ({ className, Icon, onClick, ...variantProps }, ref) => {
     return (
-      <button
-        ref={ref}
-        className={variants({ ...variantProps, className })}
-        onClick={onClick}
-      >
+      <button ref={ref} className={variants({ ...variantProps, className })} onClick={onClick}>
         <Icon className={styles.icon} />
       </button>
     );

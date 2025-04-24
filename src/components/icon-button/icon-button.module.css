@@ -1,4 +1,4 @@
-.icon-button {
+.iconButton {
   cursor: pointer;
 
   display: flex;
@@ -6,8 +6,8 @@
   justify-content: center;
   justify-self: center;
 
-  width: 40px;
-  height: 40px;
+  width: 2.5rem;
+  height: 2.5rem;
   padding: 0;
   border: none;
   border-radius: var(--border-radius);
@@ -41,8 +41,8 @@
 }
 
 .icon {
-  width: 50%;
-  height: 50%;
+  width: 60%;
+  height: 60%;
   transition: transform var(--transition-seconds) ease;
 
   &:hover {

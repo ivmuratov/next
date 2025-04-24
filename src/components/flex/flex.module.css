@@ -1,0 +1,101 @@
+/* Flex.module.css */
+.flex {
+  display: flex;
+}
+
+/* Направление (direction) */
+.row {
+  flex-direction: row;
+}
+
+.rowReverse {
+  flex-direction: row-reverse;
+}
+
+.column {
+  flex-direction: column;
+}
+
+.columnReverse {
+  flex-direction: column-reverse;
+}
+
+/* Выравнивание по главной оси (justify-content) */
+.justifyStart {
+  justify-content: flex-start;
+}
+
+.justifyEnd {
+  justify-content: flex-end;
+}
+
+.justifyCenter {
+  justify-content: center;
+}
+
+.justifyBetween {
+  justify-content: space-between;
+}
+
+.justifyAround {
+  justify-content: space-around;
+}
+
+.justifyEvenly {
+  justify-content: space-evenly;
+}
+
+/* Выравнивание по поперечной оси (align-items) */
+.alignStart {
+  align-items: flex-start;
+}
+
+.alignEnd {
+  align-items: flex-end;
+}
+
+.alignCenter {
+  align-items: center;
+}
+
+.alignBaseline {
+  align-items: baseline;
+}
+
+.alignStretch {
+  align-items: stretch;
+}
+
+/* Перенос элементов (flex-wrap) */
+.nowrap {
+  flex-wrap: nowrap;
+}
+
+.wrap {
+  flex-wrap: wrap;
+}
+
+.wrapReverse {
+  flex-wrap: wrap-reverse;
+}
+
+/* Промежутки между элементами (gap) */
+.gapXs {
+  gap: 4px;
+}
+
+.gapSm {
+  gap: 8px;
+}
+
+.gapMd {
+  gap: 16px;
+}
+
+.gapLg {
+  gap: 24px;
+}
+
+.gapXl {
+  gap: 32px;
+}

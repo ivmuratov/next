@@ -1,11 +1,9 @@
 .sidebar {
-  overflow: hidden;
-  display: grid;
-  justify-content: center;
+  position: relative;
 
   width: var(--sidebar-width);
   height: 100vh;
-  padding: 16px;
+  padding: 1rem;
 
   background-color: var(--background-secondary);
 
@@ -16,4 +14,22 @@
 
 .collapsed {
   width: var(--sidebar-width-collapsed);
+}
+
+.menu {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.collapseSwitcherButton {
+  position: absolute;
+  right: -1rem;
+  bottom: 4rem;
+}
+
+.themeSwitcherButton {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
 }

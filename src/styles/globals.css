@@ -27,5 +27,5 @@ body {
   --transition-seconds: 0.4s;
 
   /* Бордер радиус */
-  --border-radius: 4px;
+  --border-radius: 0.25rem;
 }
