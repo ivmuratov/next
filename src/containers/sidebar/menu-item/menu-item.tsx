@@ -14,7 +14,7 @@ export function MenuItem({ Icon, label, href, isCollapsed }: Props) {
   return (
     <li>
       <Link href={href} className={clsx(styles.link, pathname === href && styles.active)}>
-        <Icon />
+        <Icon className={clsx(styles.icon, isCollapsed && styles.centered)} />
         <span className={clsx(styles.label, isCollapsed && styles.hidden)}>{label}</span>
       </Link>
     </li>

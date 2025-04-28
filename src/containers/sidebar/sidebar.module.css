@@ -10,10 +10,10 @@
   transition:
     width var(--transition-seconds) ease,
     background-color var(--transition-seconds) ease;
-}
 
-.collapsed {
-  width: var(--sidebar-width-collapsed);
+  &.collapsed {
+    width: var(--sidebar-width-collapsed);
+  }
 }
 
 .menu {
@@ -30,6 +30,6 @@
 
 .themeSwitcherButton {
   position: absolute;
-  top: 1rem;
-  right: 1rem;
+  right: -1rem;
+  bottom: 7rem;
 }

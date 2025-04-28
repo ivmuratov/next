@@ -14,20 +14,32 @@
     transform: translateY(-1px);
     color: var(--danger);
   }
+
+  &.active {
+    color: var(--danger);
+  }
 }
 
-.active {
-  color: var(--danger);
+.icon {
+  position: relative;
+  left: 0;
+
+  &.centered {
+    left: 50%;
+    transform: translateX(-50%);
+    transition:
+      left var(--transition-seconds) ease,
+      transform var(--transition-seconds) ease;
+  }
 }
 
 .label {
   display: inline-block;
-  width: max-content;
+  width: 0;
   opacity: 1;
-  transition: all var(--transition-seconds) ease;
+  transition: opacity var(--transition-seconds) ease;
 
   &.hidden {
-    width: 0;
     opacity: 0;
   }
 }
