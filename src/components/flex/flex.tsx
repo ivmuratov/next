@@ -1,6 +1,6 @@
 import { cva, VariantProps } from "class-variance-authority";
 import { ElementType, forwardRef, PropsWithChildren } from "react";
-import styles from "./flex.module.css";
+import styles from "./Flex.module.css";
 
 const variants = cva(styles.flex, {
   variants: {

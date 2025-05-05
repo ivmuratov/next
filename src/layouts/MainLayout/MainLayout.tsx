@@ -1,6 +1,6 @@
 import { Sidebar } from "@/containers";
 import type { PropsWithChildren } from "react";
-import styles from "./main-layout.module.css";
+import styles from "./MainLayout.module.css";
 
 export function MainLayout({ children }: PropsWithChildren) {
   return (

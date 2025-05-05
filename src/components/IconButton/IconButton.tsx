@@ -1,7 +1,7 @@
 import { forwardRef } from "react";
 import { cva, VariantProps } from "class-variance-authority";
 import type { LucideIcon } from "lucide-react";
-import styles from "./icon-button.module.css";
+import styles from "./IconButton.module.css";
 
 const variants = cva(styles.iconButton, {
   variants: {

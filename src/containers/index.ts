@@ -1,2 +1,2 @@
-export * from "./sidebar";
-export * from "./page";
+export * from "./Sidebar";
+export * from "./Page";

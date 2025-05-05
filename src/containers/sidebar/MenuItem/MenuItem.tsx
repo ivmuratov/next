@@ -2,7 +2,7 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import type { MenuItem } from "../models";
 import clsx from "clsx";
-import styles from "./menu-item.module.css";
+import styles from "./MenuItem.module.css";
 
 interface Props extends MenuItem {
   isCollapsed: boolean;

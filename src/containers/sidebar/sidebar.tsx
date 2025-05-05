@@ -4,10 +4,10 @@ import { useBoolean } from "@/hooks";
 import { ChevronLeft, ChevronRight, Moon, Sun } from "lucide-react";
 import { Flex, IconButton } from "@/components";
 import { useTheme } from "next-themes";
-import clsx from "clsx";
-import styles from "./sidebar.module.css";
 import { MENU_ITEMS } from "./constants";
-import { MenuItem } from "./menu-item";
+import { MenuItem } from "./MenuItem";
+import clsx from "clsx";
+import styles from "./Sidebar.module.css";
 
 export function Sidebar() {
   const [isCollapsed, setIsCollapsed] = useBoolean();
