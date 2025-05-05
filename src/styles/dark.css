@@ -16,5 +16,18 @@
   /* Состояния */
   --hover-bg: #1a2235;
   --active-bg: #182338;
+
+  /* Тени */
+  --shadow-sm: 0 1px 2px 0 rgb(0 0 0 / 50%);
+  --shadow: 0 4px 6px -1px rgb(0 0 0 / 50%), 0 2px 4px -1px rgb(0 0 0 / 30%);
+  --shadow-md: 0 10px 15px -3px rgb(0 0 0 / 50%), 0 4px 6px -2px rgb(0 0 0 / 25%);
+  --shadow-lg: 0 20px 25px -5px rgb(0 0 0 / 50%), 0 10px 10px -5px rgb(0 0 0 / 20%);
+  --shadow-xl: 0 25px 50px -12px rgb(0 0 0 / 60%);
+  --shadow-inner: inset 0 2px 4px 0 rgb(0 0 0 / 40%);
+  --shadow-outline: 0 0 0 3px rgb(124 58 237 / 50%);
+
+  /* Бордеры */
   --border-color: #2d3748;
+  --border-light: #3c4658;
+  --border-active: #4f46e5;
 }

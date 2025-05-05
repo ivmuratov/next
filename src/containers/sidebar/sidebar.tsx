@@ -1,9 +1,8 @@
 "use client";
 
 import { useBoolean } from "@/hooks";
-import { ChevronLeft, ChevronRight, Moon, Sun } from "lucide-react";
+import { ChevronLeft, ChevronRight } from "lucide-react";
 import { Flex, IconButton } from "@/components";
-import { useTheme } from "next-themes";
 import { MENU_ITEMS } from "./constants";
 import { MenuItem } from "./MenuItem";
 import clsx from "clsx";
@@ -11,9 +10,6 @@ import styles from "./Sidebar.module.css";
 
 export function Sidebar() {
   const [isCollapsed, setIsCollapsed] = useBoolean();
-  const { theme, setTheme } = useTheme();
-
-  const handleSetTheme = () => setTheme(theme === "dark" ? "light" : "dark");
 
   return (
     <Flex
@@ -29,12 +25,6 @@ export function Sidebar() {
         </Flex>
       </nav>
 
-      <IconButton
-        className={styles.themeSwitcherButton}
-        Icon={theme === "dark" ? Sun : Moon}
-        onClick={handleSetTheme}
-        variant="round"
-      />
       <IconButton
         className={styles.collapseSwitcherButton}
         Icon={isCollapsed ? ChevronRight : ChevronLeft}
