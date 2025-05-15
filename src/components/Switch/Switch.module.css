@@ -1,0 +1,34 @@
+.switch {
+  cursor: pointer;
+
+  position: relative;
+
+  width: 52px;
+  height: 30px;
+  border-radius: 100px;
+
+  background-color: var(--background);
+
+  transition: background-color var(--transition-seconds) ease-in-out;
+}
+
+.thumb {
+  position: absolute;
+  top: 50%;
+  left: 2px;
+  transform: translateY(-50%);
+
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+
+  background-color: var(--foreground);
+
+  transition: transform var(--transition-seconds) ease-in-out;
+}
+
+.switch[data-checked] {
+  & > .thumb {
+    transform: translateY(-50%) translateX(22px);
+  }
+}
